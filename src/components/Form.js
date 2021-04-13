@@ -9,8 +9,7 @@ class Form extends Component {
 
         */
        this.state = {
-           name: '',
-            URL: ''
+           name: '', URL: ''
        }
 
     }
@@ -51,10 +50,11 @@ class Form extends Component {
             onChange = {this.handleChange} />
             
             <label htmlFor = 'urlInput'>
+                URL:
+                </label>
                 <input type = 'url' name = 'url' id = 'urlInput'
                 value = {this.state.url}
                 onChange = {this.handleChange} />
-            </label>
 
             <button type = 'submit'> Submit </button>
             </form>
